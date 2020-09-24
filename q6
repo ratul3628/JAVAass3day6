@@ -1,0 +1,36 @@
+
+package d6q6;
+
+
+ class Parent {
+    String name; 
+    void method() 
+    { 
+        System.out.println("Method from Parent"); 
+    } 
+}
+ class Chld extends Parent {
+     int id; 
+      void method() 
+        { 
+            System.out.println("Method from Child"); 
+        } 
+ }
+public class D6q6 {
+
+    
+    public static void main(String[] args) {
+        Parent p = new Chld(); 
+        p.name = "JAVA SE 14.2"; 
+        System.out.println(p.name); 
+        p.method(); 
+        Chld c = (Chld)p;
+        c.id = 1; 
+        System.out.println(c.name); 
+        System.out.println(c.id); 
+        c.method();
+    }
+    
+}
+
+
