@@ -1,0 +1,52 @@
+
+package d6q2;
+class A
+{
+    void show()
+    {
+        System.out.println("A called");
+    }
+}
+class B extends A
+{
+    void show()
+    {
+        System.out.println("B called");
+    }
+}
+class C extends A
+{
+    void show()
+    {
+        System.out.println("C called");
+    }
+}
+class D extends A
+{
+    void show()
+    {
+        System.out.println("D called");
+    }
+}
+/**
+ *
+ * @author RATUL
+ */
+public class D6q2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        A ob=new A();
+        ob.show();
+        ob=new B();
+        ob.show();
+        ob=new C();
+        ob.show();
+        ob=new D();
+        ob.show();
+    }
+    
+}
