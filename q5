@@ -1,0 +1,49 @@
+
+package d6q5;
+
+abstract class Shape
+{
+   abstract public void area();
+}
+
+class Circle extends Shape
+{
+    double r;
+    double area;
+    public Circle()
+            {
+              r=30.5;   
+            }
+   
+    public void area()
+    {
+       area=2*3.14*r;
+       System.out.println("Circle area="+area);
+    }
+}
+
+class Rectangle extends Shape
+{
+    double len,brea,area;
+    public Rectangle()
+    {
+        len=30.1;
+        brea=30.4;
+    }
+  
+    public void area()
+    {
+    area=len*brea;
+    System.out.println("Recangle area:"+area);
+    }
+}
+public class D6q5 {
+
+    public static void main(String[] args) {
+       Shape ob1=new Circle();
+       ob1.area();
+       Shape ob2=new Rectangle();
+       ob2.area();
+    }
+    
+}
