@@ -1,0 +1,26 @@
+
+package d6q4;
+abstract class Super
+{
+   abstract void meth1();
+   abstract void meth2();
+   abstract void meth3();
+   
+}
+
+ class Child extends Super{
+    
+    void meth1()
+    {
+        System.out.println("meth1 overriden ");
+    }
+}
+
+public class D6q4 {
+
+    public static void main(String[] args) {
+      
+        Super A=new Child();
+    }
+    
+}
